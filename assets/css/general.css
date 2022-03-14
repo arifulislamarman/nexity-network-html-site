@@ -1742,7 +1742,7 @@ footer .footer-socket ul {
 .home .module-inner {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   display: -ms-grid;
   display: grid;
   min-height: 425px;
@@ -2560,7 +2560,7 @@ footer .footer-socket ul {
 }
 .module-report .tabs-content .tab-content .table .table-header {
   display: none;
-  -ms-grid-columns: (1fr) [6];
+  /* -ms-grid-columns: (1fr) [6]; */
   grid-template-columns: repeat(6, 1fr);
   background: #e9effa;
   border-top-left-radius: 7px;
@@ -2651,7 +2651,7 @@ footer .footer-socket ul {
     .row
     .quarters
     .quarter {
-    -ms-grid-columns: (1fr) [5];
+    /* -ms-grid-columns: (1fr) [5]; */
     grid-template-columns: repeat(5, 1fr);
   }
 }
