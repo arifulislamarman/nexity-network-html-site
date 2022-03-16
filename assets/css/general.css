@@ -3352,4 +3352,11 @@ footer .footer-socket ul {
   .home .module-inner.feture-module-2 {
     padding-top: 90px;
   }
+
+  .border-container.column a::after {
+    content: ">" !important;
+    display: inline-block;
+    margin-left: 5px;
+    transition: all 0.23s ease-out;
+}
 }
