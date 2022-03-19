@@ -36,7 +36,7 @@ img {
   width: 100%;
   height: 100%;
   max-width: calc(1400px + var(--grid-gap, 30px));
-  padding: 0 20px;
+  padding: 0 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -311,7 +311,9 @@ a {
 @media screen and (min-width: 1024px) {
   .button {
     min-width: 180px;
-    padding: 16px 45px;
+    padding: 0;
+    height: 54px;
+    line-height: 54px !important;
   }
 
   .button.transparent {
@@ -827,7 +829,7 @@ a {
 }
 
 footer {
-  background-color: #151516;
+  background-color: #07071c;
   color: #ffffff;
 }
 footer.purple-footer {
@@ -1155,8 +1157,8 @@ footer .footer-socket ul {
 .frontpage-teaser .image img {
   width: 100%;
   height: auto;
-  max-width: 350px;
-  max-height: 250px;
+  max-width: 280px;
+  max-height: 230px;
   object-fit: contain;
 }
 @media screen and (min-width: 1024px) {
@@ -1167,11 +1169,12 @@ footer .footer-socket ul {
   }
 }
 .frontpage-teaser .content h2 {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 900;
   margin-bottom: 25px;
   text-align: center;
   letter-spacing: -0.05em;
+  margin-top:0px;
 }
 @media screen and (min-width: 640px) {
   .frontpage-teaser .content h2 {
@@ -1196,6 +1199,7 @@ footer .footer-socket ul {
 @media screen and (min-width: 1280px) {
   .frontpage-teaser .content h2 {
     margin-bottom: 15px;
+    margin-top:0px
   }
 }
 .frontpage-teaser .content .description {
@@ -1241,7 +1245,7 @@ footer .footer-socket ul {
   }
 
   .frontpage-teaser .content a:after {
-    content: "" !important;
+    content: ""!important ;
     display: inline-block;
     margin-left: 0px;
     transition: all 0.23s ease-out;
@@ -1586,6 +1590,11 @@ footer .footer-socket ul {
   align-items: center;
   gap: 0;
 }
+
+
+.module-frontpage_landscape_teaser .border-container .teaser{
+  align-items: flex-start;
+}
 @media screen and (min-width: 1024px) {
   .module-frontpage_landscape_teaser .teaser {
     -webkit-flex-direction: row;
@@ -1861,7 +1870,7 @@ footer .footer-socket ul {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  line-height: 27px;
+  line-height: 29px;
   color: #ffffff;
 }
 .mobile-hide {
@@ -1924,10 +1933,11 @@ footer .footer-socket ul {
     flex: 2;
     margin: 0 auto;
 
-    height: 600px;
+    height: 550px;
     display: flex;
     justify-content: center;
     margin-right: 20px;
+    padding-top: 60px;
   }
 
   .text-left {
@@ -1944,7 +1954,7 @@ footer .footer-socket ul {
   }
 
   .column-content {
-    align-content: center;
+    align-content: flex-start;
     justify-content: center;
     padding: 35px;
   }
@@ -1961,7 +1971,12 @@ footer .footer-socket ul {
     letter-spacing: -0.05em;
 
     color: #ffffff;
+    margin-top: 34px;
   }
+
+  .column-content.item h2 {
+     margin-top: 50px;
+}
 
   .text-center {
     text-align: center !important;
@@ -3220,7 +3235,7 @@ footer .footer-socket ul {
 
 .bg-blue {
   background: linear-gradient(327.28deg, #072c79 1.76%, #070747 98.93%);
-  border-radius: 64px;
+  border-radius: 24px;
 }
 .bg-green {
   background: linear-gradient(
@@ -3228,7 +3243,7 @@ footer .footer-socket ul {
     rgba(2, 181, 181, 0.85) -6.03%,
     #02232b 93.93%
   );
-  border-radius: 64px;
+  border-radius: 24px;
 }
 
 .self-align {
@@ -3245,18 +3260,18 @@ footer .footer-socket ul {
 }
 
 .section-heading h2 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 135.52%;
-  /* or 34px */
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 25px;
+line-height: 135.52%;
+/* or 34px */
 
-  text-align: center;
-  letter-spacing: -0.05em;
+text-align: center;
+letter-spacing: -0.05em;
 
-  color: #ffffff;
-  width: 65%;
+color: #FFFFFF;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 75px;
@@ -3281,11 +3296,17 @@ footer .footer-socket ul {
 .home .module-inner.feture-module-2 {
   padding-top: 0px;
 }
+
+
+.padding-top-0{
+  padding-top:0px !important;
+}
+
 @media screen and (min-width: 1024px) {
   .section-heading {
     display: block;
     padding-top: 20px;
-    padding-bottom: 124px;
+    padding-bottom: 60px;
   }
   .section-heading h2 {
     font-size: 60px;
@@ -3316,7 +3337,7 @@ footer .footer-socket ul {
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 126.52%;
     text-align: center;
     letter-spacing: -0.05em;
@@ -3342,7 +3363,7 @@ footer .footer-socket ul {
   .column.first-column,
   .column.second-column {
     width: 100%;
-    height: 605px !important;
+    height: 550px !important;
   }
 
   .home .module-inner.feture-module-1 {
@@ -3358,5 +3379,180 @@ footer .footer-socket ul {
     display: inline-block;
     margin-left: 5px;
     transition: all 0.23s ease-out;
+}
+.padding-bottom-0{
+  padding-bottom:0px !important;
+}
+
+.padding-top-0{
+  padding-top:0px !important;
+}
+
+.flex-start{
+  align-items: flex-start;
+}
+
+.bg-blue {
+  
+  border-radius: 64px;
+}
+.bg-green {
+
+  border-radius: 64px;
+}
+
+
+}
+
+/* nextads styling  */
+
+.padding-left-right{
+  padding-left:100px;
+  padding-right:50px;
+}
+.frontpage-teaser .content.box-content a {
+  display:inline-block;
+ }
+.frontpage-teaser .content.box-content h2{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 96.52%;
+/* or 39px */
+
+text-align: center;
+letter-spacing: -0.05em;
+
+color: #FFFFFF;
+}
+.mobile-link{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top:60px;
+}
+
+.border-mobile {
+  border: 1px solid #8E72CC;
+  box-sizing: border-box;
+}
+.mobile-padding-top-bottom-0{
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+}
+@media screen and (min-width: 1024px) {
+  .sologan-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 183.52%;
+    /* or 101px */
+    
+    text-align: center;
+    letter-spacing: -0.05em;
+    
+    background: linear-gradient(184.15deg, #6946FA 6.01%, #DB10FA 93.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .guide-heading{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: -0.05em;
+
+color: #C4C4C4;
+margin-top:50px;
+  }
+  .content-description{
+
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 125%;
+/* or 30px */
+
+
+color: #D0D9E2;
+margin-bottom:30px;
+  }
+  .frontpage-teaser .content a.arrow::after{
+    content: ">" !important;
+    display: inline-block;
+    margin-left: 5px;
+    transition: all 0.23s ease-out;
+  }
+
+  .border-mobile {
+    border: 0px solid #8E72CC;
+    box-sizing: border-box;
+  }
+
+  .mobile-padding-top-bottom-0 {
+    padding-top: 0px ;
+    padding-bottom: 90px !important ;
+  }
+
+  .inner-container.nextadd-column-container{
+    height:750px;
+  }
+
+  .nextadd-column-container .column-content h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 127.52%;
+    /* or 57px */
+    
+    text-align: center;
+    letter-spacing: -0.05em;
+    
+    background: linear-gradient(90deg, #068BEB 0%, #04B3EE 102.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .nextadd-column-container .column-content a{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 109.52%;
+    /* identical to box height, or 20px */
+    
+    text-align: right;
+    
+    color: #077DE9;
+  }
+.nextadd-column-container .column-content a::after{
+  content: ">" !important;
+  display: inline-block;
+  margin-left: 5px;
+  transition: all 0.23s ease-out;
+}
+.frontpage-teaser .content a.arrow{
+  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 109.52%;
+}
+
+.bg-gradient{
+  background-image:url('../images/bg-section-05-next.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+
+
 }
 }
